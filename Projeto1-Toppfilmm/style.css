@@ -1,0 +1,215 @@
+    
+/* Cabeçalho interativo- efeito ao passar o mouse */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Cor azul::#0bbae1
+Cor rosa:rgb(222, 23, 93)
+Cor de verde:#37cb2f; */
+
+form {
+  display: flex; /* Organiza os elementos em linha */
+  width: 300px; /* Define a largura da barra de busca */
+  margin: 20px auto; /* Centraliza a barra de busca na página */
+  align-items: left;
+}
+
+#busca {
+  flex: 1; /* Faz o campo de entrada ocupar todo o espaço disponível */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  border-radius: 5px; /* Arredonda os cantos */
+}
+
+button {
+  padding: 10px; /* Adiciona espaçamento interno */
+  background-color: #cb2f2f; /* Cor do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão do botão */
+  cursor: pointer; /* Indica que o elemento é clicável */
+}
+
+button i {
+  margin-right: 10px; /* Adiciona espaço à direita do ícone */
+}
+.cabecalho{
+   
+    background-color:white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding: 10px ;}
+    
+   
+  .contato {
+    font-size:18px;
+    text-align: center;
+    margin: 10px;
+    color: antiquewhite;
+      }       
+           
+/* Menu de navegação*/
+
+header {
+    color: rgb(222, 23, 93) 
+    text-align: center;
+    padding: 10px 0;
+    font-size:1.1rem;
+    position: ; 
+    width: 100%; 
+    justify-content: space-between;
+    top: 0;
+    left: 0; 
+       }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+          
+  }
+    nav a {
+    color:rgb(249, 246, 247) ;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: 0.2s;
+    justify-content: left;
+    
+  }
+  
+  nav a:hover {
+    color: #cb2f2f;;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+/* Estilo geral*/
+h1{ 
+    color:#cb2f2f;(222, 23, 93) ;
+    font-style: italic;
+    text-align: center;
+    font-size:3rem;
+    margin: 20px;
+    padding: 20px;
+          }
+h2{
+    color:#cb2f2f;
+    font-size: 1.6rem;
+     text-align: center;
+}
+h3{
+  color:#5F6873
+  font-size: 1.4rem;
+}
+
+h1, h2, h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+}
+ p {
+    text-align: justify;
+    line-height: 1.6; /* Espaçamento entre linhas para conforto */
+    font-family: "Montserrat",sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+         
+  }
+  a:hover {
+    color: rgb(218, 206, 218);
+  }
+
+  /* Seções principais */
+ body {
+  font-family: "Montserrat",sans-serif;
+  font-size: 18px;
+  background-color: #090000; 
+   
+}
+.contatos, .nossahistoria, .kits, .materiais{
+   margin: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+.nossahistoria{
+  position: relative;
+}
+
+/* Rodapé */
+footer{
+  background-color:#cb2f2f;;
+  color: #fff;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width:100%;
+  margin-top: 60px;
+  
+}
+/* Para retirar as bordas */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Imagens */
+ 
+img {
+    margin-top: 1px
+    width : 100px;
+    height: 100px;
+   
+   }
+
+   .imagem1{
+    padding: 10px;
+    margin-top: 5px;
+    width: 440px;
+    height: 300px;
+    border-radius: 10%;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;/* Define a transição */
+   }
+      
+    .banner1 {
+      padding: 20px;
+      margin-top: 40px;
+      width: 1600px;
+      height: 1000px;
+      
+          }
+   
+   .imagem1.imagem1.in-view{
+    opacity: 1; /* Quando entra na visualização, opacidade fica 1 (opaco) */
+   } 
+
+  /* Começa com opacidade 0 (transparente) */
+  ; /* Define a transição */
+
+
+.imagem-fade-in.in-view {
+  opacity: 1; /* Quando entra na visualização, opacidade fica 1 (opaco) */
+}
+/* Media queries para ajustar layout mobile */
+@media (max-width: 480px) {
+  nav{
+    flex-direction: column;
+  }
+  .educacao{
+    flex-direction: column;
+  }
+  .experiencia, .educacao{
+    flex-direction: row;
+  }
+  .cabecalho{
+    flex-direction: column;
+    order:4;
+  }
+  h1{ order: 1}
+  .img {
+    margin-bottom: 10px; /* Ajustar o espaçamento entre as imagens em telas menores */
+    order: 2;
+  }
+  .resumo{order:3}
+  
+  }
+  <a href="https://br.freepik.com/fotos-gratis/gray-clean-paperboard_5813138.htm#fromView=search&page=1&position=1&uuid=12462113-0494-4617-85b7-fc713bfda60c">Imagem de efe_madrid no Freepik</a>
+  
+
+
